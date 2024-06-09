@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Enigpus.controllers;
 
-Console.WriteLine("Hello, World!");
+namespace Enigpus;
+
+public static class Program
+{
+    public static void Main(string[] args)
+    {
+        var inventoryController = new InventoryController();
+        inventoryController.Run();
+    }
+    
+}
